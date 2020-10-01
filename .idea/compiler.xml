@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="earaqlss-task1-master" target="1.8" />
+      <module name="earaqlss-task1-master.main" target="1.8" />
+      <module name="earaqlss-task1-master.test" target="1.8" />
+      <module name="earaqlss-task2-master" target="1.8" />
+      <module name="earaqlss-task2-master.main" target="1.8" />
+      <module name="earaqlss-task2-master.test" target="1.8" />
+      <module name="earaqlss-task4-master" target="1.8" />
+      <module name="earaqlss-task4-master.main" target="1.8" />
+      <module name="earaqlss-task4-master.test" target="1.8" />
+      <module name="earaqlss-task5-master" target="1.8" />
+      <module name="earaqlss-task5-master.main" target="1.8" />
+      <module name="earaqlss-task5-master.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

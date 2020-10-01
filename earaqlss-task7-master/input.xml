@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<guns>
+    <gun>
+        <model>M4A1</model>
+        <handy>2</handy>
+        <origin>USA</origin>
+        <tacticalCharacteristics>
+            <scope type="ACOG"/>
+            <effectiveRange range="1000"/>
+            <fireMode fireMode="auto"/>
+        </tacticalCharacteristics>
+        <material material="plastic"/>
+    </gun>
+    <gun>
+        <model>AK-47 beta</model>
+        <handy>1</handy>
+        <origin>Germany</origin>
+        <tacticalCharacteristics>
+            <scope type="noScope"/>
+            <effectiveRange range="500"/>
+            <fireMode fireMode="semi-auto"/>
+        </tacticalCharacteristics>
+        <material material="wood"/>
+    </gun>
+    <gun>
+        <model>SCAR-H</model>
+        <handy>2</handy>
+        <origin>Belgium</origin>
+        <tacticalCharacteristics>
+            <scope type="nightVisionScope"/>
+            <effectiveRange range="1500"/>
+            <fireMode fireMode="auto"/>
+        </tacticalCharacteristics>
+        <material material="plastic"/>
+    </gun>
+</guns>

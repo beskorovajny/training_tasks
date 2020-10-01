@@ -1,0 +1,4 @@
+Create a class that displays the
+content of the text file to
+console, deleting the first two
+Можливо я також здам це завдання

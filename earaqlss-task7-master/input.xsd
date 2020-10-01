@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="guns" type="gunsType"/>
+  <xsd:complexType name="scopeType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute type="xsd:string" name="type" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="effectiveRangeType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute type="xsd:string" name="range" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="fireModeType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute type="xsd:string" name="fireMode" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="tacticalCharacteristicsType">
+    <xsd:sequence>
+      <xsd:element type="scopeType" name="scope"/>
+      <xsd:element type="effectiveRangeType" name="effectiveRange"/>
+      <xsd:element type="fireModeType" name="fireMode"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="materialType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:string">
+        <xsd:attribute type="xsd:string" name="material" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="gunType">
+    <xsd:sequence>
+      <xsd:element name="model">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="M4A1"/>
+            <xsd:enumeration value="AK-47 beta"/>
+            <xsd:enumeration value="SCAR-H"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="handy">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:byte">
+            <xsd:enumeration value="2"/>
+            <xsd:enumeration value="1"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="origin">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="USA"/>
+            <xsd:enumeration value="Germany"/>
+            <xsd:enumeration value="Belgium"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element type="tacticalCharacteristicsType" name="tacticalCharacteristics"/>
+      <xsd:element type="materialType" name="material"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="gunsType">
+    <xsd:sequence>
+      <xsd:element type="gunType" name="gun" maxOccurs="unbounded" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
