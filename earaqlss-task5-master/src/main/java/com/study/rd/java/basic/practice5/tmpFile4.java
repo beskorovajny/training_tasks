@@ -18,7 +18,7 @@ import static java.util.regex.Pattern.*;
 /**
  * @author beskorovajny
  */
-public class tmpFile4 {
+public class TmpFile4 {
     public static final Logger LOGGER = Logger.getLogger(tmpFile4.class.getName());
     public static final String FILE_NAME = "part4.txt";
 
